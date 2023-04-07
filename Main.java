@@ -61,7 +61,7 @@ public class Main {
         System.out.println("We are deciding on the price for a water. Here is the description:");
         water.type();
         System.out.println(
-                "How much would you like to pay for the cupcake? (Input a numerical number taken to 2 decimal places)");
+                "How much would you like to pay for the drink? (Input a numerical number taken to 2 decimal places)");
         String priceWaterText = input.nextLine();
 
         double priceWater = Double.parseDouble(priceWaterText);
@@ -71,7 +71,7 @@ public class Main {
         System.out.println("We are deciding on the price for a soda. Here is the description:");
         soda.type();
         System.out.println(
-                "How much would you like to pay for the cupcake? (Input a numerical number taken to 2 decimal places)");
+                "How much would you like to pay for the drink? (Input a numerical number taken to 2 decimal places)");
         String priceSodaText = input.nextLine();
 
         double priceSoda = Double.parseDouble(priceSodaText);
@@ -81,7 +81,7 @@ public class Main {
         System.out.println("We are deciding on the price for milk. Here is the description:");
         milk.type();
         System.out.println(
-                "How much would you like to pay for the cupcake? (Input a numerical number taken to 2 decimal places)");
+                "How much would you like to pay for the drink? (Input a numerical number taken to 2 decimal places)");
         String priceMilkText = input.nextLine();
 
         double priceMilk = Double.parseDouble(priceMilkText);
@@ -91,6 +91,11 @@ public class Main {
         drinkMenu.add(water);
         drinkMenu.add(soda);
         drinkMenu.add(milk);
+        //////////////
+
+        new Order(cupcakeMenu, drinkMenu);
+
+        input.close();
 
     }
 }

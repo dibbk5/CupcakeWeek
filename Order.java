@@ -42,7 +42,7 @@ public class Order {
                 System.out.println();
             }
 
-            while (ordering = true) {
+            while (ordering) {
                 System.out.println(
                         "What would you like to order? Please use the number associated with each item to order");
                 int orderChoice = input.nextInt();
